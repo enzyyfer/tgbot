@@ -19,43 +19,38 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! If you have any questions on how to use me, read /help - and then head to @MarieSupport.
+Hai nama saya {}! Jika Anda memiliki pertanyaan tentang cara menggunakan saya, baca /help , dan dikelolah oleh [tuan saya](t.me/GoodayFreeze).
 
-I'm a group manager bot built in python3, using the python-telegram-bot library, and am fully opensource; \
-you can find what makes me tick [here](github.com/PaulSonOfLars/tgbot)!
+Saya bot manajer grup yang dibangun di python3, menggunakan pustaka python-telegram-bot, dan saya sepenuhnya opensource; \
+Anda dapat menemukan apa yang membuat saya tergerak [di sini](github.com/PaulSonOfLars/tgbot.git)!
 
-Feel free to submit pull requests on github, or to contact my support group, @MarieSupport, with any bugs, questions \
-or feature requests you might have :)
-I also have a news channel, @MarieNews for announcements on new features, downtime, etc.
+Anda dapat menemukan daftar perintah yang tersedia dengan / help.
 
-You can find the list of available commands with /help.
-
-If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
+Jika Anda senang menggunakan saya, dan / atau ingin membantu saya bertahan hidup di alam liar, tekan / donasikan untuk membantu mendanai / meningkatkan VPS saya!
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hei yang disana! Nama saya adalah *{}*.
+Saya bot manajemen grup modular dengan beberapa tambahan yang menyenangkan! Lihat berikut ini untuk mengetahui gambaran tentang \
+hal-hal yang dapat saya bantu.
 
-*Main* commands available:
- - /start: start the bot
- - /help: PM's you this message.
- - /help <module name>: PM's you info about that module.
- - /donate: information about how to donate!
- - /settings:
-   - in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
-
+* Perintah utama * tersedia:
+  - / start: mulai bot
+  - / help: PM's you pesan ini.
+  - / help <module name>: PM's info kamu tentang modul itu.
+  - / donate: informasi tentang cara berdonasi!
+  - / pengaturan:
+    - di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
+    - dalam grup: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for my creator to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Heya, senang mendengar Anda ingin berdonasi!
+Pencipta saya butuh kerja keras untuk membawa saya ke posisi saya sekarang, dan setiap donasi membantu \
+memotivasi dia untuk membuatku lebih baik. Semua uang donasi akan masuk ke VPS yang lebih baik untuk menampung saya, dan / atau bir \
+(lihat bio-nya!). Dia hanya murid yang malang, jadi sedikit membantu!
+Ada dua cara untuk membayarnya; [PayPal] (paypal.me/PaulSonOfLars), atau [Monzo] (monzo.me/paulnionvestergaardlarsen)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
